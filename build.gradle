@@ -8,7 +8,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
+        //classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
         classpath("com.google.protobuf:protobuf-gradle-plugin:0.8.0")
     }
 }
@@ -16,7 +16,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'org.springframework.boot'
+//apply plugin: 'org.springframework.boot'
 apply plugin: 'com.google.protobuf'
 
 protobuf {
@@ -62,10 +62,10 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter")
+    //compile("org.springframework.boot:spring-boot-starter")
     compile("io.grpc:grpc-netty:${grpcVersion}")
     compile("io.grpc:grpc-protobuf:${grpcVersion}")
     compile("io.grpc:grpc-stub:${grpcVersion}")
-    testCompile("org.springframework.boot:spring-boot-starter-test")
-    testCompile("junit:junit")
+    //testCompile("org.springframework.boot:spring-boot-starter-test")
+    testCompile("junit:junit:4.12")
 }
